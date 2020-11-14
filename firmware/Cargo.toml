@@ -1,0 +1,10 @@
+[package]
+name = "firmware"
+version = "0.1.0"
+authors = ["disasm"]
+edition = "2018"
+
+[dependencies]
+stm32-peripherals = { path = "../stm32-peripherals", features = ["safe-api", "stm32f0x2"] }
+stm32-pal = { path = "../stm32-pal" }
+stm32-hal = { path = "../stm32-hal" }

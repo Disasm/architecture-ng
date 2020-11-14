@@ -1,0 +1,10 @@
+[package]
+name = "stm32-hal"
+version = "0.1.0"
+authors = ["disasm"]
+edition = "2018"
+
+[dependencies]
+stm32-peripherals = { path = "../stm32-peripherals" }
+stm32-ral = { path = "../stm32-ral" }
+cortex-m = "0.6.0"

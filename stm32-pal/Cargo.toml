@@ -1,0 +1,15 @@
+[package]
+name = "stm32-pal"
+version = "0.1.0"
+authors = ["disasm"]
+edition = "2018"
+
+[dependencies]
+stm32-peripherals = { path = "../stm32-peripherals" }
+stm32f0 = { version = "0.12.1", optional = true }
+stm32f1 = { version = "0.12.1", optional = true }
+
+[features]
+default = ["stm32f0x2"]
+stm32f0x2 = ["stm32f0/stm32f0x2"]
+stm32f103 = ["stm32f1/stm32f103"]

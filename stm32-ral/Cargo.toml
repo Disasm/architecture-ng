@@ -1,0 +1,14 @@
+[package]
+name = "stm32-ral"
+version = "0.1.0"
+authors = ["disasm"]
+edition = "2018"
+
+[dependencies]
+stm32-peripherals = { path = "../stm32-peripherals", features = ["safe-api"] }
+stm32ral = "0.4.1"
+external_cortex_m = { package = "cortex-m", version = "0.6.2" }
+
+[features]
+default = ["stm32f0x2"]
+stm32f0x2 = ["stm32ral/stm32f0x2"]

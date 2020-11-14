@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "firmware",
+    "peripheral-traits",
+    "stm32-hal",
+    "stm32-pal",
+    "stm32-peripherals",
+    "stm32-ral",
+]

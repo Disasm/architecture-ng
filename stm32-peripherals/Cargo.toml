@@ -1,0 +1,16 @@
+[package]
+name = "stm32-peripherals"
+version = "0.1.0"
+authors = ["disasm"]
+edition = "2018"
+
+[dependencies]
+peripheral-traits = { path = "../peripheral-traits" }
+cortex-m = { version = "0.6.0", optional = true }
+
+[features]
+default = ["safe-api"]
+stm32f0x2 = []
+stm32f103 = []
+
+safe-api = ["cortex-m"]
